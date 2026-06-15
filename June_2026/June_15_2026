@@ -1,0 +1,65 @@
+# State of AI (let's call it SAI) #1: SpaceX IPO, Fable 5, AI regulation, and Apple in AI 
+
+### SpaceX IPO
+
+SpaceX isn't really a frontier AI lab, but as of February 2nd of this year, X.ai became inextricably linked to Elon Musk's space exploration ambitions. As a wholly owned subsidiary of the parent SpaceX, X.ai was unable to go public solo. 
+
+SpaceX debuted on NASDAQ on June 12th, with stock closing at $161 (which is 19% up from the $135 IPO price). It then went on to raise $75 billion at a $1.75 trillion valuation. I'll have forgotten most of these numbers by the time I wake up tomorrow. The important thing is that this is the largest IPO in history, at more than 2.5x the second-largest (Saudi Aramco, Saudi Arabia's state-owned oil company and one of the world's largest oil producers; IPO in 2019).
+
+As is the case with anything of this magnitude, there are skeptics. One of them is CFRA research analyst Keith Snyder, who wonders whether the company is really worth $1.77 trillion. Knowing the kind of person Elon Musk is, this isn't a crazy take. Maybe, as Musk has shown before, SpaceX represents what's possible with human spirit in the distant future. Or something grandiose like that (IDK, I'm writing this late at night when I should be asleep).
+
+With the impending IPOs of OpenAI and Anthropic, the question remains whether market appetite for mega-listings stays strong, or whether this IPO hurts that of the other AI companies (although I don't think that'll happen -- both companies have far clearer business models than the mess that SpaceX is).
+
+It's generally agreed upon that X.AI started failing when in March of this year, Musk posted that "xAI was not built right first time around, so is being rebuilt from the foundations up"... clearly not a great look when you're trying to sell investors on the AI-specific division of your company. 
+
+Alas, wherever Musk acts in ways that are bad for investment, he seems to make up for it: data centers in space?? They're calling it "orbital AI compute infrastructure".
+
+Also, Elon Musk just became the world's first trillionaire.
+
+### The very angsty Fable 5
+
+Enough about the failures of x.AI, and onto the failures of other AI companies!
+
+On June 9th (6 days ago), Anthropic released Fable 5, the first publicly available version of its [Mythos model](https://red.anthropic.com/2026/mythos-preview/): the terrifyingly capable model that killed it so hard at vulnerability discovery that it would be dangerous if placed in the wrong hands...just imagine.
+
+Now Fable sits above Opus at 80.3% on SWE-Bench Pro, so it's quite literally the best right now. The catch is that it's included on the Pro, Max, Team, and set-based Enterprise plans at no extra costs through June 22nd (I literally have access to it because I pay $20/month). 
+
+In high-risk areas like cybersecurity, biochemistry, and distillation, it blocks responses and falls back to Claude Opus 4.8, which has been VERY annoying for people. The guardrails, I hear, have done things like boot people out at first query because it knows that they work in biochem research.
+
+
+### Colorado AI Act
+
+The 50 states vary in terms of strictness with which they word legislation that's supposed to regulate AI. In my understanding, the states don't very so much in terms of success of regulation: they all consistently fail. The Colorado AI Act's success, then, makes it one of the most consequential pieces of legislation to take effect in 2026. This is an interesting (and more common, I think I'll find) case of a "consequential deadline" becoming neutralized by tech lobbying before it could actually take effect.
+
+The original law (SB 24-205) was meant to regulate the development and deployment of high-risk AI systems, place onligations to protect CO residents from algorithmic discrimination in employment, education, financial and givernment services, healthcare, housing, insurance, you name it. It was incredibly comprehensive.
+
+On May 14th of this year (the Thursday before WM graduation), Governor Polis signed SB 189, which revised the original AI law and delayed the date from June 30th 2026 to Jan 1st, 2027. It also replaced the original comprehensive risk-management framework with a narrower notice-and-transparency model (EX "duty to use reasonable care to avoid algorithmic discrimination" is no gone).
+
+
+### Great American AI Act of 2026
+
+This is a whopping 269-page bill about "frontier AI": the big AI companies with more than $500 million in annual revenue that have trained the most powerful models. Here are the key requirements placed on them:
+
+- Disclose info about models (like submitting reportis of any "critical safety incidents" to the director of the Center for AI Standards and Innovation -- CAISI)
+- Obtain some form of third party audit
+- Refrain from retaliating against whistleblowers
+
+This bipartisan bill blocks states from regulating AI deployment for 3 years, which will reignite a fight between the states and the Trump Admin. The states retain their ability to regulate AI use within their borders, but lose the ability to regulate how they're BUILT, according to [Broadband Breakfast](https://broadbandbreakfast.com/ai-preemption-battle-lands-in-congress-with-substantive-discussion-draft/).
+
+Another thing: what is [CAISI](https://www.nist.gov/caisi)? It gets formally established by this bill, and is tasked with making VOLUNTARY standards and guidelines. It's appropriated an annual $100 million from 2027 to 2029. It's supposed to be "industry's primary point of contact within the US government to harnessing and securing the potential of commercial AI systems". This means work with [National Institute for Standards in Technology (NIST)](https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology) which is an agency of the US Department of Commerce.
+
+CAISI is already leading testing on frontier models to evaluate their security prior to deployment. This bill simply formalizes its mission and funds it.
+
+### Apple WWDC
+
+As we know, Apple got SUPER left behind in the AI onslaught: people are still buying iPhones to access Claude, Gemini, and ChatGPT. Maybe this changes after Tim Cook's tenure gives way to now-hardware-chief John Ternus (Sept 1st of this year). His biggest challenge, it seems,w ill be to fix the company's AI strategy that has been dragging it down in the past ~2 years. 
+
+WWDC (worldwide developers' conference) is Apple's annual conference in Apple Park (Cupertino) where they announce rollouts and updates to the Apple ecosystem. This year's conference was held in mid-June, so very recently. Biggest updates:
+
+- Apple completely rebuilt Siri from the ground up. She now has full on-srceen awareness (so she reads what you're looking at in real time). Remember: Siri is powered by Google Gemini
+- iOs 27 = 30% faster app launches and supports every device that ran iOS 26 with no cuts
+- New Apple Intelligence features (like Safari tab management, one-tap password updating, cross-app context awareness), and Messages with AI-powered replies
+
+Seems like Apple's trying to compensate for its lagging in the AI world with its on-device AI capabilities (15 years of custom silicon expertise doesn't hurt here). Is this the case for running models locally rather than in the cloud? 
+
+It's framing of its competitive advantage: deeply personalized experienced that are delivered without exposing user data. This relies on a mix of on-device processing and tightly controlled cloud.
